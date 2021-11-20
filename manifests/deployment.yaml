@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: playground-deployment
+spec:
+  selector:
+    matchLabels:
+      app: amassnao
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: amassnao
+    spec:
+      containers:
+      - name: playground
+        image: wil42/playground:v1
+        ports:
+        - containerPort: 8888
