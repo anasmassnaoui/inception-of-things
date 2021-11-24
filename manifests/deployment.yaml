@@ -21,7 +21,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: playground-deployment-service
+  name: playground-service
 spec:
   ports:
   - port: 8888
