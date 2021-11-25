@@ -28,4 +28,4 @@ spec:
     targetPort: 8888
     protocol: TCP
   selector:
-    run: playground
+    app: playground
